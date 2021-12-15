@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IBurger_App</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="forgetpass" >نسيت كلمة السر ؟</string>
+    <string name="noaccount">لا تملك حساب ؟ اضغط للتسجيل</string>
+    <string name="login" >الدخول</string>
+    <string name="fullname" >الاسم كامل</string>
+    <string name="phone" >رقم الهاتف</string>
+    <string name="location" >العنوان</string>
+    <string name="repass" >اعادة كلمة السر</string>
+    <string name="signup" >التسجيل</string>
+    <string name="burger">برقر</string>
+    <string name="snaks" > وجبات خفيفة </string>
+    <string name="profile_menu" >حسابي</string>
+    <string name="orders" >الطلبات</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="save">حفظ</string>
+    <string name="meal" translatable="true">وجبة</string>
+    <string name="ordernow" >اطلب الان</string>
+    <string name="check" >تحقق</string>
+    <string name="confirm" translatable="true">تأكيد</string>
+
+</resources>

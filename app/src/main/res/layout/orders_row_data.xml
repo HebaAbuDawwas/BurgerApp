@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/grid_item"
+        android:layout_width="200dp"
+        android:layout_height="280dp">
+        <ImageView
+
+            android:id="@+id/item_back"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:src="@drawable/item_orange"/>
+        <ImageView
+            android:id="@+id/itemDes"
+            android:layout_marginTop="45dp"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:src="@drawable/burger"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:layout_marginTop="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/count_under" />
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="50dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="38dp"
+            android:layout_height="30dp"
+            android:src="@drawable/plus" />
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="50dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="93dp"
+            android:layout_height="30dp"
+            android:src="@drawable/minus" />
+        <TextView
+            android:id="@+id/num_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/DarkGray"
+
+            />
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="B U R G E R"
+            android:gravity="center"
+            android:fontFamily="@font/raleway_semibold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/DarkGray"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

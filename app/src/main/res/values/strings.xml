@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">IBurger_App</string>
+    <string name="email" translatable="true">EMAIL ADDRESS</string>
+    <string name="password" translatable="true">P A S S W O R D</string>
+    <string name="forgetpass" translatable="true">FORGET PASSWORD ? </string>
+    <string name="noaccount" translatable="true">DONT HAVE ACCOUNT ? SIGNUP</string>
+    <string name="login" translatable="true">L O G I N</string>
+    <string name="fullname" translatable="true">FULL NAME</string>
+    <string name="phone" translatable="true">PHONE NUMBER</string>
+    <string name="location" translatable="true">L O C A T I O N</string>
+    <string name="repass" translatable="true">R E - P A S S W O R D</string>
+    <string name="signup" translatable="true">S I G N U P</string>
+    <string name="burger" translatable="true">B U R G E R</string>
+    <string name="snaks" translatable="true">S N A K S</string>
+    <string name="profile_menu" translatable="true">P R O F I L E</string>
+    <string name="orders" translatable="true">O R D E R S</string>
+    <string name="logout" translatable="true">L O G O U T</string>
+    <string name="save" translatable="true">S A V E</string>
+    <string name="meal" translatable="true">M E A L</string>
+    <string name="ordernow" translatable="true">ORDER NOW</string>
+    <string name="check" translatable="true">C H E C K</string>
+    <string name="confirm" translatable="true">C O N F I R M</string>
+</resources>

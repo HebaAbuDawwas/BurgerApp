@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Snaks_Activity"
+    android:id="@+id/drawer"
+    android:background="@drawable/snak_back">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/menu_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            />
+        <ImageView
+            android:id="@+id/back_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/back_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/back_ic"
+            android:layout_toRightOf="@id/back_ic"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/Yellow"
+            android:textSize="15dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="@string/snaks"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+
+
+            <GridView
+                android:id="@+id/grid_burger"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layoutDirection="rtl"
+        app:itemTextAppearance="@style/RobotoTextViewStyle"
+
+        android:background="@drawable/menu_back"
+        app:menu="@menu/navi_menu"
+        android:paddingTop="100dp"
+        app:itemTextColor="@color/DarkGray"
+
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

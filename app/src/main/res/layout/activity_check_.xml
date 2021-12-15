@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer"
+    android:layout_height="match_parent"
+    android:background="@drawable/check_back"
+    tools:context=".Check_Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/back_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/back_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/back_ic"
+            android:layout_toRightOf="@id/back_ic"
+            android:layout_marginTop="25dp"
+            android:textColor="#9cc434"
+            android:textSize="15dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="@string/check"
+            />
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/menu_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="500dp"
+            android:layout_height="400dp"
+            android:src="@drawable/item_orange"
+            />
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/iburgerlogo"
+            />
+        <RelativeLayout
+            android:id="@+id/ordernow_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="465dp">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/item_yellow"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+           android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:textSize="28dp"
+            android:textColor="@color/Orange"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="@string/ordernow"
+            />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="330dp"
+            android:src="@drawable/dollar"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="410dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/Yellow"
+
+            android:fontFamily="@font/raleway_semibold"
+            android:text="30 JD"
+            />
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layoutDirection="rtl"
+        app:itemTextAppearance="@style/RobotoTextViewStyle"
+
+        android:background="@drawable/menu_back"
+        app:menu="@menu/navi_menu"
+        android:paddingTop="100dp"
+        app:itemTextColor="@color/DarkGray"
+
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:context=".Profile_Activity"
+    android:background="@drawable/background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/menu_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/back_ic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/back_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/back_ic"
+            android:layout_toRightOf="@id/back_ic"
+            android:layout_marginTop="25dp"
+            android:textColor="#9cc434"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="@string/profile_menu"
+            />
+
+        <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:src="@drawable/iburgerlogo"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@color/Yellow"
+            android:fontFamily="@font/raleway_bold"
+            android:gravity="center"
+            android:hint="@string/fullname"
+            android:inputType="textPersonName"
+            android:textColor="@color/DarkGray"
+            android:textColorHint="@color/DarkGray"
+            android:textSize="12sp" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/Yellow"
+            android:fontFamily="@font/raleway_bold"
+            android:gravity="center"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:textColor="@color/DarkGray"
+            android:textColorHint="@color/DarkGray"
+            android:textSize="12sp" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/Yellow"
+            android:fontFamily="@font/raleway_bold"
+            android:gravity="center"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/DarkGray"
+            android:textColorHint="@color/DarkGray"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/locationIn"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/Yellow"
+            android:fontFamily="@font/raleway_bold"
+            android:gravity="center"
+            android:text="@string/location"
+            android:textColor="@color/DarkGray"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:hint="@string/password"
+            android:textColorHint="@color/DarkGray"
+            android:layout_marginTop="20dp"
+            android:background="@color/Yellow"
+            android:fontFamily="@font/raleway_bold"
+            android:gravity="center"
+            android:textColor="@color/DarkGray"
+            android:textSize="12sp"
+            android:inputType="numberPassword"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:hint="@string/repass"
+            android:textColorHint="@color/DarkGray"
+            android:layout_marginTop="20dp"
+            android:background="@color/Yellow"
+            android:fontFamily="@font/raleway_bold"
+            android:gravity="center"
+            android:textColor="@color/DarkGray"
+            android:textSize="12sp"
+            android:inputType="numberPassword"
+            />
+
+
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/raleway_bold"
+            android:text="@string/save"
+            android:textColor="@color/Orange"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layoutDirection="rtl"
+        app:itemTextAppearance="@style/RobotoTextViewStyle"
+
+        android:background="@drawable/menu_back"
+        app:menu="@menu/navi_menu"
+        android:paddingTop="100dp"
+        app:itemTextColor="@color/DarkGray"
+
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>
